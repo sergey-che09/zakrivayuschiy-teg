@@ -250,6 +250,7 @@
   background-color: var(--accent-color, #fff);
   padding: 0;
   border: 2px solid var(--text-color, #000);
+  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -269,7 +270,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--text-color, #000);
-  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -301,12 +301,17 @@
 
 .button__save {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--accent-font, "Press Start 2P", sans-serif);
   font-size: 0.875rem;
   font-weight: bold;
   color: var(--text-color, #000);
+  text-transform: uppercase;
   cursor: pointer;
   padding: 2px 15px;
-  transition: color 0.5s ease-in-out;
+  margin-block-end: 100px;
 }
 
 .button__save svg {
@@ -343,16 +348,6 @@
 
 .button__save:hover::before {
   transform: scaleX(1);
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--accent-font, "Press Start 2P", sans-serif);
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-block: 50px;
 }
 
 @media (width <= 375.5px) {
