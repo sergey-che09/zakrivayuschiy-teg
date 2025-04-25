@@ -250,7 +250,7 @@
   background-color: var(--accent-color, #fff);
   padding: 0;
   border: 2px solid var(--text-color, #000);
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 .button__text {
@@ -323,11 +323,6 @@
   z-index: 1;
 }
 
-.btn-text {
-  transition: color 1.5s ease-out;
-  z-index: 1;
-}
-
 .button__save:hover {
   color: var(--accent-color, #fff);
 }
@@ -343,7 +338,6 @@
   inset: 0;
   transform: scaleX(0);
   transform-origin: left top;
-  transition: transform 0.7s ease-in-out;
 }
 
 .button__save:hover::before {
